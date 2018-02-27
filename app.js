@@ -44,7 +44,7 @@ app.use('/contatos',contatos);
 
 
 //Iniciar o servidor
-var port = 3000;
+const port = process.env.PORT || 8080;
 app.listen(port, function(){
     console.log('Server rodando na porta '+port);
 });
